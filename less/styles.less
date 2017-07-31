@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import "font-awesome";
+@birdBlue : #1976d2;
+@hundred: 100%;
+@betweenmd12: 14%;
+@spaceUp : 6%;
+@350size : 38.5%;
+@350Height: 4.35%;
+@md7: 78.33%;
+@shift: 11.5%;
+@screenHeight: 45%;
+
+a:hover, a:before, a:active, a:focus {
+	text-decoration: none;
+	color: #1875f0;
+}
+.one{
+	display: none;
+}
+.two{
+	display: none;
+}
+.three{
+	display: none;
+}
+.four{
+	display: none;
+}
+.five{
+	display: none;
+}
+.six{
+	display: none;
+}
+.seven{
+	display: none;
+}
+.eight{
+	display: none;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.centerRect {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: @screenHeight * 1.135;
+    height: @screenHeight;
+    margin-top: (0 - @screenHeight/3);
+    /*set to a negative number 1/2 of your height*/
+    margin-left: (0 - (@screenHeight * 1.135)/2);
+    /*set to a negative number 1/2 of your width*/
+    background-color: #f8f8f8;
+    border-radius: 10px;
+}
+
+.changeCont {
+    color: blue;
+    background-color: white;
+    height: 100%;
+    border-right: 1px solid #f8f8f8;
+    border-radius: 10px;
+    
+}
+
+.staticCont {
+    color: black;
+    background-color: #f8f8f8;
+    height: 100%;
+}
+
+.contLeft {
+    background-color: white;
+    width: 100%;
+    padding: 3%;
+}
+
+.thing {
+    width: 12%;
+    height: 12%;
+    object-fit: contain;
+}
+
+.padLeft {
+    padding-left: 5%;
+}
+
+.text {
+    font-family: "Roboto";
+    font-size: .9em;
+    line-height: 1.43;
+    color: #212121;
+}
+
+.leftHead {
+    font-family: "Roboto Slab";
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.11;
+    text-align: left;
+}
+.bgCar{
+	width: 100%;
+	height: 100%;
+	background: url(../img/car.svg) ;
+	background-repeat-x: no-repeat; 
+	background-repeat-y: no-repeat; 
+	background-position: 120% center;
+	background-origin: right;
+
+}
+.bigNumber{
+	font-size: 2em;
+	font-family: "Roboto Slab";
+  font-weight: 300;
+  line-height: 1.11;
+  color: #1875f0;
+}
+.rightHead {
+    font-family: "Roboto Slab";
+    font-size: 1.8em;
+    font-weight: 300;
+    line-height: 1.11;
+    text-align: left;
+    width: 45%;
+}
+
+.car {
+	object-fit:contain;
+	width: 115%;
+	display: stretch-flex;
+}
+
+.blue {
+    color: #1976d2;
+}
+
+.boxShadows {
+    box-shadow: 0 8px 12px 5px rgba(0, 0, 0, 0.06);
+}
+
+.contain {
+    width: 100%;
+    height: 100%;
+}
+
+.address {
+    width: 50%;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: white;
+    font-family: "Roboto";
+    overflow-x: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+header {
+    .header;
+}
+
+.header {
+    background-color: @birdBlue;
+}
+
+.FreeTrial_BGR {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    object-fit: contain;
+    background-color: @birdBlue;
+    background-size: cover;
+    width: @hundred;
+}
+
+.added {
+    color: white;
+    height: 10.3%;
+    border-radius: 2px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 0 rgba(255, 255, 255, 0.13);
+    border: solid 1px #f4f4f4;
+}
+
+.number {
+    width: 100%;
+    height: 41.7%;
+    font-family: "Roboto";
+    font-size: 13px;
+    text-align: center;
+    color: #ffffff;
+    padding: 4%;
+    margin: 0;
+}
+
+.refresh {
+    font-family: "Roboto";
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-align: bottom;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 5%;
+}
+
+.navBar {
+    padding-top: 3.3%;
+}
+
+.reviews {
+    .boxShadows;
+    height: @350Height;
+    background-color: #3e84e4;
+}
+
+.map {
+    min-height: 140px;
+    max-height: 250px;
+    height: 3vh;
+    display: block;
+    .boxShadows;
+}
+
+.spaceUp {
+    margin-top: @spaceUp;
+}
+
+.spaceUpHalf {
+    margin-top: @spaceUp * .3;
+}
+
+.spaceUp2x {
+    margin-top: @spaceUp *1.5;
+    background-color: #f8f8f8;
+}
+
+.card {
+    height: 500px;
+    background-color: #ffffff;
+    .boxShadows;
+    margin-right: 1.6%;
+    padding: 0;
+}
+
+.cardHorizontal {
+    .card;
+    width: @350size;
+    min-height: 180px;
+    height: @350Height ;
+}
+
+.w2 {
+    width: @350size * 1.2;
+    height: @350Height * 1.2;
+}
+
+.shiftLeft {
+    margin-left: @shift;
+}
+
+.shiftRight {
+    margin-right: @shift;
+}
+
+.top {
+    background-color: @birdBlue;
+    top: 0;
+    height: 50%;
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+    vertical-align: center;
+}
+
+.bottom {
+    height: 50%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    vertical-align: center;
+    align-content: center;
+}
+
+.placeholderTable {
+    height: 874px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
+    display: block;
+    float: none;
+    width: @md7;
+    padding: 0;
+}
+
+.textHeader {
+    color: #212121;
+    font-family: "Roboto Slab";
+    margin-top: 5%;
+}
+
+.textHeaderP {
+    .textHeader;
+    color: #666666;
+    margin-top: 6%;
+}
+
+.thoughts {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 0;
+    padding-right: 0;
+    background: linear-gradient(-123deg, #ffffff 60%, #f2f2f2 50%);
+    width: @md7;
+}
+
+.leftSide {
+    margin-top: 3.5%;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    text-align: center;
+    height: auto;
+    color: #666666;
+}
+
+@media (min-width: 1501px) {
+    .card {
+        height: 670px;
+    }
+    .cardHorizontal {
+        min-height: 255px;
+        height: @350Height * 1.2;
+    }
+    .map {
+        height: 40%;
+    }
+    .text{
+    	font-size: 1.2em;
+    }
+    .rightHead {
+        font-size: 2em;
+    }
+    .bigNumber{
+    	margin-top: 15%;
+    	font-size: 2.5em;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+    // built for this one so doesn't need any work right now
+    .centerRect{
+    	height: @screenHeight * 1.2;
+    }
+    .bgCar{
+    	width: 100%;
+    	background-position: 250% 55%;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .FreeTrial_BGR {
+        height: 15%;
+    }
+    .spaceUp2x {
+        margin-top: @spaceUp *2;
+        background-color: #f8f8f8;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .FreeTrial_BGR {
+        height: 15%;
+    }
+    .spaceUp2x {
+        margin-top: @spaceUp *2;
+        background-color: #f8f8f8;
+    }
+}
+
+
+/* Small Devices, Tablets */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .FreeTrial_BGR {
+        height: 15%;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media (min-width: 992px) and (max-width: 1200px) {}
+
+
+/* Large Devices, Wide Screens */
